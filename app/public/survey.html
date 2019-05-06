@@ -180,17 +180,21 @@
                 </div>
             </div>
             <br>
-                <button class="btn btn-primary btn-lg"><span class="fa fa-check-circle"></span> Submit</button>
+              <a href="/results"><button id="button" class="btn btn-primary btn-lg"><span class="fa fa-check-circle"></span> Submit</button></a>
         </div>
     </form>
 
-</body>
+
 
 <script type="text/javascript">
-    $("button").on("click", function (event) {
+// $("#button").on("click", function (event) {
+//     console.log("I, the button, was pressed")
+// });
+
+    $("#button").on("click", function (event) {
         event.preventDefault();
 
-        var scoreArray = []
+        var scoreArray = [];
         for (let i = 1; i <= 10; i++) {
             scoreArray.push(parseInt($("#option" + i).val()));
         }
@@ -200,6 +204,8 @@
             photo: $("#image").val().trim(),
             scores: scoreArray
         };
+
+        console.log(newFriend);
 
         $.post("/api/survey", newFriend, function (data) {
 
@@ -215,6 +221,7 @@
         });
         // console.log(newFriend);
     });
+    
 </script>
-
+</body>
 </html>

@@ -29,4 +29,51 @@ var friendsData = [{
         scores: [5, 4, 3, 2, 1, 2, 3, 4, 5, 4]
     }
 ]
+
 module.exports = friendsData;
+//= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+// var newPerson = {
+//     name: "Pablo Escobar",
+//     photo: "https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiQiYf_iPjhAhVQdt8KHb05Cc0QjRx6BAgBEAU&url=https%3A%2F%2Fwww.kisspng.com%2Fpng-sandy-cheeks-mr-krabs-patrick-star-squidward-tenta-5493469%2F&psig=AOvVaw1mM6C0FEDUdsSw_XZe42X6&ust=1556722398301620",
+//     scores: [5, 4, 4, 4, 4, 3, 2, 1, 5, 5]
+// }
+
+// var a = newPerson.scores;
+
+// for (i = 0; i < friendsData.length; i++){
+//     var b = friendsData[i].scores;
+//     var name = friendsData[i].name;
+
+//     // console.log(b +" "+ name);
+
+//     var x = a.map(function(item, index) {
+//         // In this case item correspond to currentValue of array a, 
+//         // using index to get value from array b
+//         return Math.abs(item - b[index]);
+//       })
+
+//     //   console.log(x +" "+ "this is a difference with"+" "+ name);
+//       var sum = x.reduce(function(a, b) { return a + b; }, 0);
+//     //   console.log(""+" "+ sum);
+//       var results = new evaluatedResults(name, sum);
+//       var tested = [];
+//       tested.push(results);
+//       console.log(tested);
+// }
+
+// function evaluatedResults (name, compatibility){
+//     this.name = name;
+//     this.compatibility = compatibility;
+// }
+
+
+
+ 
+
+// // // var x = a.map(function(item, index) {
+// // //   // In this case item correspond to currentValue of array a, 
+// // //   // using index to get value from array b
+// // //   return item - b[index];
+// // // })
+// // console.log(x);
