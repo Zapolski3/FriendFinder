@@ -180,11 +180,13 @@
                 </div>
             </div>
             <br>
-              <a href="/results"><button id="button" class="btn btn-primary btn-lg"><span class="fa fa-check-circle"></span> Submit</button></a>
+            
               <!-- <a href="../public/results.html"><button>RESULTS PAGE</button></a> -->
         </div>
+       
     </form>
-
+    <a href="/results"><button id="button" class="btn btn-primary btn-lg"><span class="fa fa-check-circle"></span> Submit</button></a>
+</body>
 
 
 <script type="text/javascript">
@@ -193,7 +195,7 @@
 // });
 
     $("#button").on("click", function (event) {
-        event.preventDefault();
+        // event.preventDefault();
 
         var scoreArray = [];
         for (let i = 1; i <= 10; i++) {
@@ -209,7 +211,7 @@
         console.log(newFriend);
 
         $.post("/api/survey", newFriend, function (data) {
-
+            console.log(data);
             if(data){
                 alert("DAT@REQDFVAS")
             }else {
@@ -217,12 +219,12 @@
             }
             console.log("ADDED To POST!");
             //select all values from user input
-            alert("data");
-            console.log(data);
+            alert(sdata);
+           
         });
         // console.log(newFriend);
     });
     
 </script>
-</body>
+
 </html>
